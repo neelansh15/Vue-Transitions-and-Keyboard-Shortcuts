@@ -148,7 +148,7 @@ ul.tab-bar .tab:hover {
   width: 25%;
   height: 2vh;
   background-color: #071e3d;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
 }
@@ -157,7 +157,7 @@ ul.tab-bar .tab:hover {
   width: 25%;
   height: 2vh;
   background-color: #1f4287;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 25%;
 }
@@ -166,7 +166,7 @@ ul.tab-bar .tab:hover {
   width: 25%;
   height: 2vh;
   background-color: #278ea5;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 50%;
 }
@@ -175,7 +175,7 @@ ul.tab-bar .tab:hover {
   width: 25%;
   height: 2vh;
   background-color: #21e6c1;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 75%;
 }
