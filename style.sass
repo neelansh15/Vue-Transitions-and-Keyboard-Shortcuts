@@ -8,12 +8,12 @@
         width: 50%
 
 @mixin underline($color, $left)
-    width: 20%
+    width: 10%
     height: 10%
     background-color: $color
     position: absolute
     bottom: 0
-    left: $left * 4
+    left: $left
 
 @mixin underline-footer($color, $left)
     width: 25%
@@ -98,11 +98,11 @@ ul.tab-bar
         .underline-darkblue
             @include underline(#071e3d, 0)
         .underline-blue
-            @include underline(#1f4287, 2em)
+            @include underline(#1f4287, 10%)
         .underline-lightblue
-            @include underline(#278ea5, 4em)
+            @include underline(#278ea5, 20%)
         .underline-greenish
-            @include underline(#21e6c1, 6em)
+            @include underline(#21e6c1, 30%)
             
 .underline-footer-darkblue
     @include underline-footer(#071e3d, 0)

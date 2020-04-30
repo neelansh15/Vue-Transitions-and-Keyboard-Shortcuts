@@ -108,7 +108,7 @@ ul.tab-bar .tab:hover {
 }
 
 .container .header-box .underline-darkblue {
-  width: 20%;
+  width: 10%;
   height: 10%;
   background-color: #071e3d;
   position: absolute;
@@ -117,30 +117,30 @@ ul.tab-bar .tab:hover {
 }
 
 .container .header-box .underline-blue {
-  width: 20%;
+  width: 10%;
   height: 10%;
   background-color: #1f4287;
   position: absolute;
   bottom: 0;
-  left: 8em;
+  left: 10%;
 }
 
 .container .header-box .underline-lightblue {
-  width: 20%;
+  width: 10%;
   height: 10%;
   background-color: #278ea5;
   position: absolute;
   bottom: 0;
-  left: 16em;
+  left: 20%;
 }
 
 .container .header-box .underline-greenish {
-  width: 20%;
+  width: 10%;
   height: 10%;
   background-color: #21e6c1;
   position: absolute;
   bottom: 0;
-  left: 24em;
+  left: 30%;
 }
 
 .underline-footer-darkblue {
