@@ -105,6 +105,7 @@ ul.tab-bar .tab:hover {
 
 .container .header-box .heading {
   font-size: 4em;
+  padding-bottom: 0.1em;
 }
 
 .container .header-box .underline-darkblue {
