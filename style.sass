@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap')
+
+@media screen and ( max-width: 768px ) //Smol
+    section
+        width: 80%
+@media screen and ( min-width: 769px ) //Big
+    section
+        width: 50%
+
+@mixin underline($color, $left)
+    width: 20%
+    height: 10%
+    background-color: $color
+    position: absolute
+    bottom: 0
+    left: $left * 4
+
+@mixin underline-footer($color, $left)
+    width: 25%
+    height: 2vh
+    background-color: $color
+    position: absolute
+    bottom: 0
+    left: $left
+    
+
+*
+    margin: 0
+    padding: 0
+
+body
+    font-family: 'Montserrat'
+    background-color: #f7f7f7
+
+section
+    height: 80vh
+    padding: 3em
+    margin: auto
+
+ul.tab-bar
+    width: 100%
+    margin: 2em
+    background-color: #071e3d
+    list-style-type: none
+    margin: 0 auto
+    display: flex
+
+    .tab
+        display: block
+        margin: 0em
+        padding: 1em
+        cursor: pointer
+        transition: all 0.1s ease-in-out
+        color: white
+        &:hover
+            background-color: #278ea5
+            color: #f7f7f7
+
+.tab-content
+    padding: 2em 2em
+    background-color: #f0f0f0
+
+    h1
+        margin-bottom: 0.2em
+    
+    p
+        padding: 1em 0
+    
+    button
+        padding: 0.6em 1.4em
+        border: none
+        cursor: pointer
+        color: white
+        font-family: 'Montserrat'
+        
+        
+        &:nth-of-type(1)
+            background-color: #278ea5
+            &:hover
+                background-color: #37caaf
+        &:nth-of-type(2)
+            background-color: #071e3d
+            margin-left: 0.3em
+            &:hover
+                background-color: #1f4287
+
+.container
+    margin: 2em 0
+    h1
+        margin: 0.25em 0
+
+    .header-box
+        position: relative
+
+        .heading
+            font-size: 4em
+
+        .underline-darkblue
+            @include underline(#071e3d, 0)
+        .underline-blue
+            @include underline(#1f4287, 2em)
+        .underline-lightblue
+            @include underline(#278ea5, 4em)
+        .underline-greenish
+            @include underline(#21e6c1, 6em)
+            
+.underline-footer-darkblue
+    @include underline-footer(#071e3d, 0)
+.underline-footer-blue
+    @include underline-footer(#1f4287, 25%)
+.underline-footer-lightblue
+    @include underline-footer(#278ea5, 50%)
+.underline-footer-greenish
+    @include underline-footer(#21e6c1, 75%)
+    
+
+//Vue Transitions
+.fade-enter-active, .fade-leave-active 
+    transition: all .2s ease-in-out
+
+.fade-enter
+    opacity: 0
+    transform: translateY(1em)
+
+.fade-leave-to
+    opacity: 0
+    transform: translateY(-1em)

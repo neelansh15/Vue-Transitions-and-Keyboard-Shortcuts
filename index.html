@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Transitions!</title>
+    <script src="vue.min.js"></script>
+    <script src="mousetrap.min.js"></script>
+</head>
+<body>
+    <section id="app">
+
+        <div class="container">
+            <div class="header-box">
+                <header class="heading">Animals</header>
+                <div class="underline-darkblue"></div>
+                <div class="underline-blue"></div>
+                <div class="underline-lightblue"></div>
+                <div class="underline-greenish"></div>`
+            </div>
+
+            <br>
+
+            <h1>Keyboard Shortcuts:</h1>
+            <p>Press 1, 2 and 3 respectively for each tab you want to view!</p>
+        </div>
+
+        <ul class="tab-bar">
+            <li class="tab" @click="tab = 1">Dogs</li>
+            <li class="tab" @click="tab = 2">Cats</li>
+            <li class="tab" @click="tab = 3">Dogs and Cats</li>
+        </ul>
+        <div class="tab-content">
+            <transition name="fade" mode="out-in">
+                <div v-if="tab == 1" :key="tab" appear>
+                    <h1>Dogs!</h1>
+                    <p>
+                        Ut labore irure voluptate et labore consequat laborum elit fugiat cillum aute culpa ex esse.
+                    </p>
+                    <button>OK</button>
+                    <button>Cancel</button>
+                </div>
+                <div v-if="tab == 2" :key="tab">
+                    <h1>Cats!</h1>
+                    <p>
+                        In id dolor aliqua ea magna aute. Fugiat aliquip dolor enim mollit fugiat magna.
+                    </p>
+                </div>
+                <div v-if="tab == 3" :key="tab">
+                    <h1>Dogs and Cats!</h1>
+                    <p>
+                        Anim nisi quis in elit nulla consectetur ipsum labore amet excepteur nisi.
+                    </p>
+                </div>
+            </transition>
+        </div>
+    </section>
+    
+    <div class="underline-footer-darkblue"></div>
+    <div class="underline-footer-blue"></div>
+    <div class="underline-footer-lightblue"></div>
+    <div class="underline-footer-greenish"></div>`
+
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>

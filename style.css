@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@media screen and (max-width: 768px) {
+  section {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  section {
+    width: 50%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat';
+  background-color: #f7f7f7;
+}
+
+section {
+  height: 80vh;
+  padding: 3em;
+  margin: auto;
+}
+
+ul.tab-bar {
+  width: 100%;
+  margin: 2em;
+  background-color: #071e3d;
+  list-style-type: none;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul.tab-bar .tab {
+  display: block;
+  margin: 0em;
+  padding: 1em;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  color: white;
+}
+
+ul.tab-bar .tab:hover {
+  background-color: #278ea5;
+  color: #f7f7f7;
+}
+
+.tab-content {
+  padding: 2em 2em;
+  background-color: #f0f0f0;
+}
+
+.tab-content h1 {
+  margin-bottom: 0.2em;
+}
+
+.tab-content p {
+  padding: 1em 0;
+}
+
+.tab-content button {
+  padding: 0.6em 1.4em;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.tab-content button:nth-of-type(1) {
+  background-color: #278ea5;
+}
+
+.tab-content button:nth-of-type(1):hover {
+  background-color: #37caaf;
+}
+
+.tab-content button:nth-of-type(2) {
+  background-color: #071e3d;
+  margin-left: 0.3em;
+}
+
+.tab-content button:nth-of-type(2):hover {
+  background-color: #1f4287;
+}
+
+.container {
+  margin: 2em 0;
+}
+
+.container h1 {
+  margin: 0.25em 0;
+}
+
+.container .header-box {
+  position: relative;
+}
+
+.container .header-box .heading {
+  font-size: 4em;
+}
+
+.container .header-box .underline-darkblue {
+  width: 20%;
+  height: 10%;
+  background-color: #071e3d;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.container .header-box .underline-blue {
+  width: 20%;
+  height: 10%;
+  background-color: #1f4287;
+  position: absolute;
+  bottom: 0;
+  left: 8em;
+}
+
+.container .header-box .underline-lightblue {
+  width: 20%;
+  height: 10%;
+  background-color: #278ea5;
+  position: absolute;
+  bottom: 0;
+  left: 16em;
+}
+
+.container .header-box .underline-greenish {
+  width: 20%;
+  height: 10%;
+  background-color: #21e6c1;
+  position: absolute;
+  bottom: 0;
+  left: 24em;
+}
+
+.underline-footer-darkblue {
+  width: 25%;
+  height: 2vh;
+  background-color: #071e3d;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.underline-footer-blue {
+  width: 25%;
+  height: 2vh;
+  background-color: #1f4287;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+}
+
+.underline-footer-lightblue {
+  width: 25%;
+  height: 2vh;
+  background-color: #278ea5;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.underline-footer-greenish {
+  width: 25%;
+  height: 2vh;
+  background-color: #21e6c1;
+  position: absolute;
+  bottom: 0;
+  left: 75%;
+}
+
+.fade-enter-active, .fade-leave-active {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.fade-enter {
+  opacity: 0;
+  -webkit-transform: translateY(1em);
+          transform: translateY(1em);
+}
+
+.fade-leave-to {
+  opacity: 0;
+  -webkit-transform: translateY(-1em);
+          transform: translateY(-1em);
+}
+/*# sourceMappingURL=style.css.map */
